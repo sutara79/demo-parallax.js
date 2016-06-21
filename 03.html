@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>html,body以外の親要素は影響しない</title>
+<style>
+.wrapper {
+  position: relative;
+}
+.spacer {
+  height: 500px;
+}
+.parallax-window {
+  height: 200px;
+  background: transparent;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <h1>html,body以外の親要素は影響しない</h1>
+  <div class="spacer"></div>
+  <div class="wrapper"><div class="parallax-window" data-parallax="scroll" data-image-src="001.jpg"></div></div>
+  <div class="spacer"></div>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="002.jpg"></div>
+  <div class="spacer"></div>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="003.jpg"></div>
+  <div class="spacer"></div>
+</div>
+</body>
+</html>
