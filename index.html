@@ -4,29 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Parallax.jsの使い方</title>
-<style>
-html {
-  position: static;
-}
-.spacer {
-  height: 500px;
-}
-.parallax-window {
-  height: 200px;
-  background: transparent;
-}
-</style>
-<script src="http://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
 <body>
 <h1>Parallax.jsの使い方</h1>
-<div class="spacer"></div>
-<div class="parallax-window" data-parallax="scroll" data-image-src="001.jpg"></div>
-<div class="spacer"></div>
-<div class="parallax-window" data-parallax="scroll" data-image-src="002.jpg"></div>
-<div class="spacer"></div>
-<div class="parallax-window" data-parallax="scroll" data-image-src="003.jpg"></div>
-<div class="spacer"></div>
+<ol>
+  <li><a href="01.html">基本</a></li>
+  <li><a href="02.html">注意: html,bodyはposition:static;のみ</a></li>
+  <li><a href="03.html">html,body以外の親要素は影響しない</a></li>
+  <li><a href="04.html">jQuery3.0では動作しない</a></li>
+</ol>
 </body>
 </html>
